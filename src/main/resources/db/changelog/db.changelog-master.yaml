@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - preConditions: 
+    - onFail: WARN 
+    - tableExists:
+        tableName: DATABASECHANGELOGLOCK
+

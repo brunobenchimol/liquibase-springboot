@@ -19,6 +19,9 @@ To run with Maven:
 `export LIQUIBASE_URL="jdbc:postgresql://127.0.0.1:5432/docker" LIQUIBASE_USERNAME=postgres LIQUIBASE_PASSWORD=docker LIQUIBASE_CHANGELOGFILE=changelog.xml LIQUIBASE_DEFAULT_SCHEMA_NAME=testing`  
 `mvn spring-boot:run`   
 
+If you want to build package to use with Dockerfile:
+`mvn package -Dmaven.test.skip` 
+
 # TODO
 
 https://github.com/blagerweij/liquibase-sessionlock  
@@ -31,7 +34,7 @@ May be helpful on openshift pod kills, prefer initContainers to solve problems.
 3. https://www.liquibase.com/blog/using-liquibase-in-kubernetes  
 
 
-5. https://github.com/lbruun/Pre-Liquibase
+4. https://github.com/lbruun/Pre-Liquibase
 
-3. https://zetcode.com/springboot/postgresql/
-4. https://medium.com/sde-base/liquibase-create-schema-tables-items-in-your-database-753a6dd38893 
+5. https://zetcode.com/springboot/postgresql/
+6. https://medium.com/sde-base/liquibase-create-schema-tables-items-in-your-database-753a6dd38893 

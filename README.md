@@ -6,6 +6,7 @@ Not ready for OpenShift / K8S yet
 
 | Variable | Description | 
 | -------- | ----------- |
+| `LIQUIBASE_ENABLE` | Enable/disable Liquibase. Defaults to `false` |
 | `LIQUIBASE_URL` | JDBC URL Connection. Equals to --url | 
 | `LIQUIBASE_USERNAME` | JDBC Username. Equals to --username |
 | `LIQUIBASE_PASSWORD` | JDBC Password. Equals to --password |

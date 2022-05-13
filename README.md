@@ -1,5 +1,7 @@
 # liquibase-springboot
 
+Running Liquibase inside Spring Boot Application
+
 # Enviroment Variables 
 
 | Variable | Description | 
@@ -19,15 +21,15 @@ If you want to run liquibase inside a pipeline or within kubernetes (initConaint
 
 To run with Maven:  
 `export LIQUIBASE_URL="jdbc:postgresql://127.0.0.1:5432/docker" LIQUIBASE_USERNAME=postgres LIQUIBASE_PASSWORD=docker LIQUIBASE_CHANGELOGFILE=changelog.xml LIQUIBASE_DEFAULT_SCHEMA_NAME=testing`  
+   
 `mvn spring-boot:run`   
 
-If you want to build package to use with Dockerfile:
-`mvn package -Dmaven.test.skip` 
+To build packages (application) for using with Dockerfile (docker build):  
+`mvn package`   
 
-# TODO
+To build Docker image:  
+`docker build -t liquibase-springboot:tag .`   
 
-https://github.com/blagerweij/liquibase-sessionlock  
-May be helpful on openshift pod kills, prefer initContainers to solve problems.
 
 # References  
 
